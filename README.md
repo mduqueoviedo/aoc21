@@ -24,3 +24,13 @@ Warming up! Set up input reader, not everyday you read and process a file...
 
 Not a specially elegant solution here, just make sure we don't read out of bounds.
 Instead of reading line by line, extract "read 2 future readings" logic into a function and iterate with it.
+
+### Day 2
+
+#### Star 1
+
+Pretty straightforward, easy to understand challenge. Probably a lot of room for code-golfing here!!
+
+#### Star 2
+
+The main challenge here for me was _reading the challenge slowly_ and understand what changed with regards to the first star! :facepalm:
