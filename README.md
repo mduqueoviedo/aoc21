@@ -34,3 +34,26 @@ Pretty straightforward, easy to understand challenge. Probably a lot of room for
 #### Star 2
 
 The main challenge here for me was _reading the challenge slowly_ and understand what changed with regards to the first star! :facepalm:
+
+### Day 3
+
+#### Star 1
+
+Things start getting a bit more complex :)
+
+Once the challenge is clear, using a transpose function is key. My solution is a bit rigged for binary strings, if I had to get the most frequent value of an alpha(numeric) string, those filters would need to be replaced by something else.
+
+Also, another optimization (but binary based, is filtering just number of zeroes and comparing with total length).
+
+_PS: I didn't remember parsing a binary to decimal was that easy_
+
+#### Star 2
+
+From previous years, when you see that the utils from the first part can help in the second, it's a good signal (or maybe they cloud your vision from a simpler solution???)
+
+The `transpose()` function helped a lot again. I am not very happy with the duplicated loop, probably they can be combined in a single `while` and use a conditional to stop evaluating one
+or the other.
+
+Funnily enough, in my first attempt, I got a result very close to the actual solution (even with the test input) by looking into the whole input _all the time_ while discarding values!!!
+
+But applying the `transpose` into the right place did the trick.
