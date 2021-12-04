@@ -43,7 +43,7 @@ Things start getting a bit more complex :)
 
 Once the challenge is clear, using a transpose function is key. My solution is a bit rigged for binary strings, if I had to get the most frequent value of an alpha(numeric) string, those filters would need to be replaced by something else.
 
-Also, another optimization (but binary based, is filtering just number of zeroes and comparing with total length).
+Also, another optimization (but binary based), is filtering just number of zeroes and comparing with total length.
 
 _PS: I didn't remember parsing a binary to decimal was that easy_
 
@@ -57,3 +57,17 @@ or the other.
 Funnily enough, in my first attempt, I got a result very close to the actual solution (even with the test input) by looking into the whole input _all the time_ while discarding values!!!
 
 But applying the `transpose` into the right place did the trick.
+
+### Day 4
+
+#### Star 1
+
+A lot of looping today! Some interesting facts:
+
+- Clean up the input to create clean boards in 2D arrays. Those double/triple spaces in the input were the first pebble in the road.
+- Break up the problem as much as possible!! My solution has 4 great submodules that do all the hard work.
+- I am pretty sure there's room for optimization, some short circuits in the loops would save a lot of iterations, but... :shrug:
+
+#### Star 2
+
+Again, I've been lucky and I could piggyback like 99% in the code of the first part. As the boards were in an array, I could just save the indexes of the winners in order so I could just retrieve the last winner.
