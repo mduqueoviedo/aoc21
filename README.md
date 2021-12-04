@@ -67,7 +67,10 @@ A lot of looping today! Some interesting facts:
 - Clean up the input to create clean boards in 2D arrays. Those double/triple spaces in the input were the first pebble in the road.
 - Break up the problem as much as possible!! My solution has 4 great submodules that do all the hard work.
 - I am pretty sure there's room for optimization, some short circuits in the loops would save a lot of iterations, but... :shrug:
+- I am kind of proud / ashamed / amazed of that double nested `reduce()` and how well it worked at the first try.
 
 #### Star 2
 
 Again, I've been lucky and I could piggyback like 99% in the code of the first part. As the boards were in an array, I could just save the indexes of the winners in order so I could just retrieve the last winner.
+
+_PS:_ I re-learnt that `array.at(-1)` allows to get last item of array, in comparison to `array[array.length - 1]`.
