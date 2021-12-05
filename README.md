@@ -81,7 +81,7 @@ The first challenge here was deciding what kind of structure to use. I doubted b
 
 So the idea was only filling up the items where the vents were happening, and that way I could just count those specific places. This way I am probably saving a lot of iterations when counting the dangerous spaces.
 
-Marking up the horizontal/vertical spaces has been a bit lazy, but it was the most straightforward solution I could think of on a sunny Sunday :sun:
+Marking up the horizontal/vertical spaces has been a bit lazy, but it was the most straightforward solution I could think of on a sunny Sunday ☀️
 
 #### Star 2
 
