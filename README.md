@@ -72,3 +72,21 @@ A lot of looping today! Some interesting facts:
 Again, I've been lucky and I could piggyback like 99% in the code of the first part. As the boards were in an array, I could just save the indexes of the winners in order so I could just retrieve the last winner.
 
 _PS:_ I re-learnt that `array.at(-1)` allows to get last item of array, in comparison to `array[array.length - 1]`.
+
+## Day 5
+
+#### Star 1
+
+The first challenge here was deciding what kind of structure to use. I doubted between 2D array or a dictionary structure (object of objects). I chose the latter because I thought the array would be using up a lot of empty array items.
+
+So the idea was only filling up the items where the vents were happening, and that way I could just count those specific places. This way I am probably saving a lot of iterations when counting the dangerous spaces.
+
+Marking up the horizontal/vertical spaces has been a bit lazy, but it was the most straightforward solution I could think of on a sunny Sunday :sun:
+
+#### Star 2
+
+The first part was hinting that considering the diagonal lines would be the second part. And that it was.
+
+I decided to copy-paste the first part and add the diagonal case. The code is actually much shorter, with those binaries we can decide if the increment is negative or positive.
+
+Probably I could use this approach for the straight lines as well and reduce a lot of code, if I get some free time I might try to apply that improvement, but at least the result is right on the first attempt.
