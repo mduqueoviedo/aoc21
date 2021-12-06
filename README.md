@@ -90,3 +90,19 @@ The first part was hinting that considering the diagonal lines would be the seco
 I decided to copy-paste the first part and add the diagonal case. The code is actually much shorter, with those binaries we can decide if the increment is negative or positive.
 
 Probably I could use this approach for the straight lines as well and reduce a lot of code, if I get some free time I might try to apply that improvement, but at least the result is right on the first attempt.
+
+## Day 6
+
+#### Star 1
+
+First part is about understanding the problem, I was afraid of breaking the memory limit, but the straightforward solution worked...
+
+#### Star 2
+
+And now I broke the memory! Today is one of those days where the obvious path blurs your vision from something more memory efficient.
+
+I confess that I had to look for hints that would point me to the right way. 🚨🚨
+
+And it was not that complicated!!! Just add up the fishes on the same state and play with them (careful when rotating their values and generating new spawn).
+
+**So I learned something today!** Avoid very long self growing data structures and group your data somehow else! And recursivity must be coming soon...
