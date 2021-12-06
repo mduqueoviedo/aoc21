@@ -1,4 +1,3 @@
 setup.sh
 
-**/input.txt
-**/test_input.txt
+**/**input.txt
