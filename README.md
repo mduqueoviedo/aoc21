@@ -106,3 +106,17 @@ I confess that I had to look for hints that would point me to the right way. ðŸš
 And it was not that complicated!!! Just add up the fishes on the same state and play with them (careful when rotating their values and generating new spawn).
 
 **So I learned something today!** Avoid very long self growing data structures and group your data somehow else! And recursivity must be coming soon...
+
+## Day 7
+
+#### Star 1
+
+After a tough one yesterday, this looked pretty straightforward. Check out min and max values and calculate cost.
+
+Based on yesterday second part, here we could optimize the same way, group the equal numbers, as the cost will be the same and multiply by that one.
+
+#### Star 2
+
+In the second star, the formula for the cost is the sum of the n terms of an [Arithmetic Progression](https://en.wikipedia.org/wiki/Arithmetic_progression) so not a lot of complications here.
+
+And we could still optimize by grouping the numbers with the same value (and we could even apply some simmetry rules and reduce that by half!)...
