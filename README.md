@@ -129,4 +129,10 @@ Some mapping and splitting does the trick to get the unique numbers. But it was 
 
 #### Star 2
 
-I don't have the solution yet but this is like playing master mind. Find possible candidates for each segment and apply some comparisons. Some cases will help finding others, so let's see with some iterations it's enough or we need to apply priorities later. Just some rambling here for now I am afraid.
+~~I don't have the solution yet but this is like playing master mind. Find possible candidates for each segment and apply some comparisons. Some cases will help finding others, so let's see with some iterations it's enough or we need to apply priorities later. Just some rambling here for now I am afraid.~~
+
+I was doing right! I was just afraid of writing too much code (lazyness) Although I am sure that as usual, I could reduce many lines from my solution.
+
+Boy, this one was tough! The main complexity though, was use pen and paper and understand how I would solve it _myself_. Then I tried to understand the whole thing and realised you don't even need all digits (I didn't use length-5 ones) to find out the values.
+
+There is no black magic in my code, apart from a couple of global variables that help me to use functions to play around with candidates and final values. Rest is filtering, sorting, searching in strings, etc.
