@@ -120,3 +120,13 @@ Based on yesterday second part, here we could optimize the same way, group the e
 In the second star, the formula for the cost is the sum of the n terms of an [Arithmetic Progression](https://en.wikipedia.org/wiki/Arithmetic_progression) so not a lot of complications here.
 
 And we could still optimize by grouping the numbers with the same value (and we could even apply some simmetry rules and reduce that by half!)...
+
+## Day 8
+
+#### Star 1
+
+Some mapping and splitting does the trick to get the unique numbers. But it was clear star 2 would be more difficult!
+
+#### Star 2
+
+I don't have the solution yet but this is like playing master mind. Find possible candidates for each segment and apply some comparisons. Some cases will help finding others, so let's see with some iterations it's enough or we need to apply priorities later. Just some rambling here for now I am afraid.
