@@ -135,9 +135,9 @@ rawInput.forEach((inputLine, index) => {
         }
     })
 
-    // From 0, 6, 9 we can deduct segment 5 because it's the only one in common 
+    // From 0, 6, 9 we can deduce segment 5 because it's the only one in common 
     // for the three of them 
-    // Then we deduct segment 2 because it's the other option
+    // Then we deduce segment 2 because it's the other option
     candidatesList[5].forEach((candidateItem) => {
         if (zeroSixNine.filter((item) => item.includes(candidateItem)).length === 3) {
             setFinalSet(5, candidateItem)
@@ -147,7 +147,7 @@ rawInput.forEach((inputLine, index) => {
 
     // We do a similar thing for segment 1, it's a candidate from digit 4 
     // and it's the one that the three of them have in common
-    // Then we deduct segment 3 as well
+    // Then we deduce segment 3 as well
     candidatesList[1].forEach((candidateItem) => {
         if (zeroSixNine.filter((item) => item.includes(candidateItem)).length === 3) {
             setFinalSet(1, candidateItem)
