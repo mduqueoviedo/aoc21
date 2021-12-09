@@ -12,6 +12,15 @@ Some people don't want to share they are participating in AOC, precisely because
 
 PS: If I were to listen to that, I can tell you I am not a good developer either. Join my club!
 
+### Not-directly-related learnings
+
+- Do AoC in _a good_ group!! Why?
+  - Support, inspiration, fresher approaches to problems...
+  - Your struggle is oftenly not yours alone, get frustrated together! :D
+  - Overcoming challenges feels better when you are part of something bigger 💪
+- Messed around with my github settings, now two accounts live together on the same computer. It was much harder than it should, IMO.
+- Keeping a diary, even if it's just for yourself, is a great mental exercise to wrap up your coding sessions.
+
 ## Day 1
 
 #### Star 1
