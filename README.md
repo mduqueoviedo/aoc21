@@ -136,3 +136,19 @@ I was doing right! I was just afraid of writing too much code (lazyness) Althoug
 Boy, this one was tough! The main complexity though, was use pen and paper and understand how I would solve it _myself_. Then I tried to understand the whole thing and realised you don't even need all digits (I didn't use length-5 ones) to find out the values.
 
 There is no black magic in my code, apart from a couple of global variables that help me to use functions to play around with candidates and final values. Rest is filtering, sorting, searching in strings, etc.
+
+## Day 9
+
+#### Star 1
+
+Playing with 2D arrays is always a bit of an exercise of patience.
+
+I am starting to think I have a very naïve approach to these AoC challenges, but it's working so far!
+
+In this first part I am just going through the values one by one and scanning their surroundings. Always be very careful, because storing 2D arrays results in arr[y][x] when seeing it in a matrix, opposite with the general convention of arr[x][y].
+
+I added a small helper to prevent this issue but I had to make some fixes yet because still managed to swap them _sigh_
+
+#### Star 2
+
+Second part is about being even more patient and not afraid of writing too much code. I used the function from the first part to identify surrounding basins, and made sure not to store them entirely but just their lengths. The result is a bit long, but easy to understand. As usual, the auxiliary functions are longer than the actual running code. But I am not unhappy with it.
