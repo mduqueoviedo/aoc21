@@ -161,3 +161,25 @@ I added a small helper to prevent this issue but I had to make some fixes yet be
 #### Star 2
 
 Second part is about being even more patient and not afraid of writing too much code. I used the function from the first part to identify surrounding basins, and made sure not to store them entirely but just their lengths. The result is a bit long, but easy to understand. As usual, the auxiliary functions are longer than the actual running code. But I am not unhappy with it.
+
+## Day 10
+
+#### Star 1
+
+I can say that this is one of the challenges I've been able to solve with no problems just because I've played Advent of Code in previous years! _Advent of Code teaches you, yayy!!_
+
+I followed a Stack approach: Opening character `push()`, closing character `pop()`; this way when you pop you should know which should be the corresponding opening character, hence count the error points if not the expected one. I expected some edge cases where my code could break, but no, quick success.
+
+Again, very simplistic and verbose code, because I bet on readability side.
+
+#### Star 2
+
+The Stack approach works perfectly here, the only thing is you have to do it _again_. The main challenge is that the remaining characters might include both opening and closing items, in those cases no completion is needed but you still need to go through them.
+
+1. Filter out errored inputs (use part 1)
+2. When the input has no error and the stack has items after processing, reverse it in order to start over.
+3. Apply same principle to the reversed items than part 1, use the stack to store complete sets and add points only when the closing character is missing.
+
+`pairMatch` does a great job of giving you the couple of any of the characters.
+
+_(If in doubt, check the code, as the wise man said, 78 lines of code are worth 1000 words 😉)_
