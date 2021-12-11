@@ -183,3 +183,19 @@ The Stack approach works perfectly here, the only thing is you have to do it _ag
 `pairMatch` does a great job of giving you the couple of any of the characters.
 
 _(If in doubt, check the code, as the wise man said, 78 lines of code are worth 1000 words 😉)_
+
+## Day 11
+
+#### Star 1
+
+Another grid challenge! This time I didn't mix up `x` and `y`, which makes me happy (and debugging that is painful)
+
+I went quickly into creating lots of utility functions to get, set values, to count for flashes, increment adjacent values... Dividing the task helped a lot.
+
+I still wasted a bit of time because of the nested `for` where I added a truncation in order to avoid limits out of bounds (when looking for adjacent on the edges), but that's on me.
+
+#### Star 2
+
+Very straightforward with my approach, added a new util to detect an all-0s array and replaced the step limited loop with a `while` not all zeroes.
+
+Today I can enjoy the Saturday without an unfinished challenge in my head :D
