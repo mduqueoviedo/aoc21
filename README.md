@@ -199,3 +199,26 @@ I still wasted a bit of time because of the nested `for` where I added a truncat
 Very straightforward with my approach, added a new util to detect an all-0s array and replaced the step limited loop with a `while` not all zeroes.
 
 Today I can enjoy the Saturday without an unfinished challenge in my head :D
+
+## Day 12
+
+#### Star 1
+
+One of my fears: The Pathfinding Challenge! I think this is the first time I complete one of this kind without looking for hints, so I am very happy! 😊
+
+I am not super proud of my code because I see some repeated patterns in the checks that can probably be cleaned up a little, but otherwise the solution is pretty neat. Just **a lot** of checks.
+
+First doubt, how to store the map?
+
+- Created a dictionary where each key would be the origin and would contain the caves that can be visited in a single step. (Careful not to consider "end" as potential key/starting)
+
+One big wrong assumption I made, I unwillingly considered the given input was **unidirectional**!! (e.g. A-B would only be stored in the map as `{A: ['B']}` but it actually was `{A: ['B'], B: ['A']}`)
+
+To get all the options, I have created an array of paths and iterated over it over and over again until no more changes were made.
+
+- For each of those paths, go to the map dictionary and get the next possible caves.
+- I had to check not having reached the end yet, that the following cave to visit has not been visited in case it's small and that is not the starting point.
+
+#### Star 2
+
+I was afraid of what to expect here, because of my fear of pathfinding, but as I was storing everything and had a couple of utility functions in place I just had to add _yet another check_. That did the trick!
