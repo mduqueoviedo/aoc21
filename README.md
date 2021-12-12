@@ -208,17 +208,18 @@ One of my fears: The Pathfinding Challenge! I think this is the first time I com
 
 I am not super proud of my code because I see some repeated patterns in the checks that can probably be cleaned up a little, but otherwise the solution is pretty neat. Just **a lot** of checks.
 
-First doubt, how to store the map?
+First doubt, **how to store the map?**
 
 - Created a dictionary where each key would be the origin and would contain the caves that can be visited in a single step. (Careful not to consider "end" as potential key/starting)
 
-One big wrong assumption I made, I unwillingly considered the given input was **unidirectional**!! (e.g. A-B would only be stored in the map as `{A: ['B']}` but it actually was `{A: ['B'], B: ['A']}`)
+_One big wrong assumption I made,_ I unwillingly considered the given input was **unidirectional**!! (e.g. A-B would only be stored in the map as `{A: ['B']}` but it actually was `{A: ['B'], B: ['A']}`)
 
-To get all the options, I have created an array of paths and iterated over it over and over again until no more changes were made.
+To get all the options, I have created an array of paths and iterated over it over and over again until no more changes were made. _(I was also a bit afraid a path might lead to an infinite loop but the AoC creator knows better)_
 
 - For each of those paths, go to the map dictionary and get the next possible caves.
 - I had to check not having reached the end yet, that the following cave to visit has not been visited in case it's small and that is not the starting point.
 
 #### Star 2
 
-I was afraid of what to expect here, because of my fear of pathfinding, but as I was storing everything and had a couple of utility functions in place I just had to add _yet another check_. That did the trick!
+I was afraid of what to expect here, because of my fear of pathfinding I thought here I would break memory or something...
+But no! As I was storing everything and had a couple of utility functions in place I just had to add _yet another check_. That did the trick!
