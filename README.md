@@ -223,3 +223,44 @@ To get all the options, I have created an array of paths and iterated over it ov
 
 I was afraid of what to expect here, because of my fear of pathfinding I thought here I would break memory or something...
 But no! As I was storing everything and had a couple of utility functions in place I just had to add _yet another check_. That did the trick!
+
+## Day 13
+
+#### Star 1
+
+Now for a very original puzzle! Even if it's just another grid challenge, this is interesting and leaves room for a lot of optimizations. The important part here is being sure the folding is done properly and the part that is folded is reversed!
+
+I also had some initial issues when initializing the grid, I created references instead of new lines and changing values was leading to unexpected results :/
+
+I am starting to feel a bit strained so there's some code repetition here, but I also think it's more verbose and easier to debug.
+
+#### Star 2
+
+As of today this is not working (yet) for me! 😡😡
+
+The example folding works fine with my code, but something is happening on successive foldings, because the final result is not properly readable (I can see some letters but not everything is clear). I need to apply some debugging but if I understood correctly, the line of the fold should only contain dots and that is not happening here.
+
+## Day 14
+
+#### Star 1
+
+This is one of those that seem easy and then have some extra complexity. I initially thought that with some replaces I would make part 1, but of course it's not that simple. I ended up generating a new string by inserting the new letter, but this solution is already a bit slow. It seemed the second part would be another memory-breaker!
+
+#### Star 2
+
+And another memory breaker it was! I tried to _cheat_ and increase node memory with `--max-old-space-size`, which actually allowed my code to get into around step 23, vs step 19 that I was getting with a regular run.
+But the author is smarter and getting into step 40 is impossible this way...
+
+I looked up into my solution for the lanternfish challenge, and have made some progress by applying the same principle, but my time has been a bit limited this week and haven't finished it yet. For some reason the resulting pairs are not generated properly.
+
+Also it's very important to take into account the last item of the string by separate, because we would lose the last character otherwise.
+
+I am almost there with this one as well, will complete it very soon!
+
+## Day 15
+
+#### Star 1
+
+Today I didn't have the time for this :sigh: And this is a big challenge that I really want to solve. It's another pathfinding problem, but this one is more traditional. The whole grid represents the map and we need to find the most efficient way.
+
+I've been reading, as pathfinding is definitely not in my daily tasks; and also undusting some old university knowledge. Also because I am a bit afraid of recursive functions I am going to try and implement a version of [Dijkstra’s Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) so wish me luck.
