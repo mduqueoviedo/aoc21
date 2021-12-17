@@ -20,6 +20,7 @@ PS: If I were to listen to that, I can tell you I am not a good developer either
   - Overcoming challenges feels better when you are part of something bigger 💪
 - Messed around with my github settings, now two accounts live together on the same computer. It was much harder than it should, IMO.
 - Keeping a diary, even if it's just for yourself, is a great mental exercise to wrap up your coding sessions.
+- Do not obsess with one problem, I've been stuck with a couple of them for days, focusing on fixing those (because I thought I was close to solving them); that's why I am behind in some of them... There's no time for everything!
 
 ## Day 1
 
@@ -264,3 +265,23 @@ I am almost there with this one as well, will complete it very soon!
 Today I didn't have the time for this :sigh: And this is a big challenge that I really want to solve. It's another pathfinding problem, but this one is more traditional. The whole grid represents the map and we need to find the most efficient way.
 
 I've been reading, as pathfinding is definitely not in my daily tasks; and also undusting some old university knowledge. Also because I am a bit afraid of recursive functions I am going to try and implement a version of [Dijkstra’s Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) so wish me luck.
+
+## Day 16
+
+#### Star 1
+
+#### Star 2
+
+## Day 17
+
+#### Star 1
+
+No complicated structures for once, just some calculations. I didn't even try to create good bounds on my exploration, so the solution needs some seconds to appear. :snail: :snail:
+
+I guess that by using some vectors or physics calculations the solution could've been improved a lot. My teachers and professors are sad now 😢😢
+
+#### Star 2
+
+Very similar to the part 1. I improved the bounds a little and also realised that I was not considering negative starting `y` values.
+
+Well, I also cheated a little bit and beefed up node memory with `--max-old-space-size=8192`...This speeds things up a tad.
