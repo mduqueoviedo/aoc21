@@ -285,3 +285,13 @@ I guess that by using some vectors or physics calculations the solution could've
 Very similar to the part 1. I improved the bounds a little and also realised that I was not considering negative starting `y` values.
 
 Well, I also cheated a little bit and beefed up node memory with `--max-old-space-size=8192`...This speeds things up a tad.
+
+## Day 21
+
+#### Star 1
+
+This first part looked easy enough to make me dread the second one... Just for fun and hoping I could be wrong, I parameterized and modularized as much as possible.
+
+#### Star 2
+
+Another big number challenge! Still working on it. By checking some combinatory and old Math knowledge, I understand every player generates 27 new universes per turn, but with only 7 possible outcomes. I think that should help me to prevent breaking the memory or the stack.
